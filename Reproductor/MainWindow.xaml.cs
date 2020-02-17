@@ -42,8 +42,7 @@ namespace Reproductor
         bool dragging = false;
         //VolumeSampleProvider volume;
         EfectoVolumen efectoVolumen;
-        EfectoFadeIn efectoFadeIn;
-        EfectoFadeOut efectoFadeOut;
+
 
         EfectoInandOut efectoInandOut;
 

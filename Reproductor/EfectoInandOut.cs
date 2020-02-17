@@ -56,19 +56,18 @@ namespace Reproductor
             }
 
             if (segundosTranscurridos >= inicio &&
-              segundosTranscurridos <= inicio + duracion)
+              segundosTranscurridos <= inicio + duracionfadeout)
             {
                 //Aplicar el efecto
                 float factorEscala =
                     1 - ((segundosTranscurridos - inicio) /
-                        duracion);
+                        duracionfadeout);
                 for (int i = 0; i < read; i++)
                 {
                     buffer[i + offset] *=
                         factorEscala;
                 }
-            }
-            else if (segundosTranscurridos >= inicio + duracion)
+            }else if (segundosTranscurridos >= inicio + duracionfadeout)
             {
                 for (int i = 0; i < read; i++)
                 {
